@@ -1,0 +1,63 @@
+$ git add HelloWorldModified.java
+
+BACH@DESKTOP-9NF0G6F MINGW64 /c/Users/bach/documents/netbeansprojects/cisc275inclass/src (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   HelloWorldModified.java
+        new file:   HelloWorldStaged.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   HelloWorldModified.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Animal.java
+        AnimalCompare.java
+        Dog.java
+        Dog1.java
+        HelloWorld.class
+        HelloWorldRepo.java
+        HelloWorldUntracked.class
+        HelloWorldUntracked.java
+        Lab1/
+        MyJava18/
+        PolyExercise/
+        PreTest/
+        PreTestMain/
+
+$ git clone https://github.com/thangdao7/Lab1
+Cloning into 'Lab1'...
+remote: Counting objects: 11, done.
+remote: Total 11 (delta 0), reused 0 (delta 0), pack-reused 11
+Unpacking objects: 100% (11/11), done.
+
+$ git remote add pjs https://github.com/thangdao7/hello-world
+
+BACH@DESKTOP-9NF0G6F MINGW64 /c/Users/bach/documents/netbeansprojects/cisc275inclass/src/lab1 (master)
+$ git fetch pjs
+warning: no common commits
+remote: Counting objects: 7, done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 7
+Unpacking objects: 100% (7/7), done.
+From https://github.com/thangdao7/hello-world
+ * [new branch]      master       -> pjs/master
+ * [new branch]      readme-edits -> pjs/readme-edits
+
+$ git push origin master
+Everything up-to-date
+
+BACH@DESKTOP-9NF0G6F MINGW64 /c/Users/bach/documents/netbeansprojects/cisc275inclass/src/lab1 (master)
+$ git remote show origin
+* remote origin
+
+        cisc275inclass/
